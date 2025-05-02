@@ -7,47 +7,36 @@ import { List, Check } from 'lucide-react';
 
 const rules = [
   {
-    category: 'submission',
-    title: 'Submission Rules',
+    category: 'event',
+    title: 'Event Rules',
     items: [
-      'All projects must be submitted by May 30, 2025, 11:59 PM EST',
-      'Projects must be hosted on GitHub Pages or similar platforms',
-      'Include a README file with instructions to run the project',
-      'Submit your entry through the official submission form',
-      'Only one submission per participant is allowed'
-    ]
-  },
-  {
-    category: 'eligibility',
-    title: 'Eligibility Criteria',
-    items: [
-      'Open to participants of all skill levels, from beginners to experts',
-      'Must implement at least 5 HTML/CSS features from the requirements list',
-      'Must include at least 4 JavaScript functions as specified',
-      'The website must be responsive and work on mobile devices',
-      'Code must be original and created specifically for this competition'
-    ]
-  },
-  {
-    category: 'judging',
-    title: 'Judging Criteria',
-    items: [
-      'Visual design and aesthetic appeal (30%)',
-      'Code quality and organization (25%)',
-      'Responsive design implementation (20%)',
-      'Creativity and innovation (15%)',
-      'Performance and accessibility (10%)'
+      'All Hack Clubbers under 18 can participate',
+      'High schoolers over 18 in the USA can participate through a club/hackathon',
+      'Participants must register before the deadline',
+      'Each participant can submit only one project',
+      'Team submissions are allowed with a maximum of 3 members per team'
     ]
   },
   {
     category: 'conduct',
     title: 'Code of Conduct',
     items: [
-      'Treat all participants and organizers with respect',
-      'Do not plagiarize or copy other participants\' work',
-      'Ask questions when in doubt about rules or requirements',
-      'Share knowledge and help other participants when appropriate',
-      'Provide constructive feedback when reviewing others\' work'
+      'All participants must adhere to the Hack Club Code of Conduct',
+      'Be respectful and supportive of other participants',
+      'Inappropriate or offensive content will result in disqualification',
+      'All communication should be constructive and respectful',
+      'Harassment of any kind will not be tolerated'
+    ]
+  },
+  {
+    category: 'submission',
+    title: 'Submission Rules',
+    items: [
+      'All submissions must be original work',
+      'No copy-pasting code from other projects or sources',
+      'Submissions must be made before the deadline (no exceptions)',
+      'Projects must be hosted and accessible for judging',
+      'Source code must be publicly available on GitHub'
     ]
   }
 ];
@@ -63,14 +52,14 @@ const RulesSection: React.FC = () => {
       <div className="container px-4 mx-auto">
         {/* Section header */}
         <div className="max-w-2xl mx-auto text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-waffle-800">Competition Rules</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-waffle-800">Competition Rules 🧇</h2>
           <p className="text-lg text-syrup-700">
             Follow these guidelines to ensure your submission is valid and qualifies for our delicious waffle prizes!
           </p>
         </div>
         
         {/* Rules tabs */}
-        <Tabs defaultValue="submission" className="max-w-4xl mx-auto">
+        <Tabs defaultValue="event" className="max-w-4xl mx-auto">
           <div className="flex justify-center mb-8">
             <TabsList className="bg-waffle-100/50 border border-waffle-200 h-auto p-1">
               {rules.map((rule) => (

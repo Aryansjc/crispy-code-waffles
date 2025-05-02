@@ -76,17 +76,6 @@ const HeroSection: React.FC = () => {
           </Button>
         </div>
       </div>
-      
-      {/* Scroll indicator */}
-      <div className={cn(
-        "absolute bottom-10 left-1/2 transform -translate-x-1/2 flex flex-col items-center opacity-0",
-        loaded && "opacity-100 transition-all duration-700 delay-1000"
-      )}>
-        <p className="text-syrup-500 mb-2">Scroll to explore</p>
-        <div className="w-6 h-10 border-2 border-syrup-300 rounded-full flex justify-center pt-2">
-          <div className="w-1 h-2 bg-syrup-400 rounded-full animate-bounce"></div>
-        </div>
-      </div>
     </section>
   );
 };

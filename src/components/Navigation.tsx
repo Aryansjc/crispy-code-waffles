@@ -46,12 +46,14 @@ const Navigation = () => {
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2">
           <div className="relative">
-            <div className="w-10 h-10 bg-waffle-300 rounded-lg waffle-grid"></div>
+            <div className="w-10 h-10 bg-waffle-300 rounded-lg waffle-grid flex items-center justify-center">
+              <span className="text-xl">🧇</span>
+            </div>
             <div className="absolute -top-1 -right-1">
               <div className="syrup-drop" style={{ '--delay': '0.2' } as React.CSSProperties}></div>
             </div>
           </div>
-          <span className="font-bold text-2xl text-waffle-800 tracking-tight">Waffles</span>
+          <span className="font-bold text-2xl text-waffle-800 tracking-tight">Waffles 🧇</span>
         </Link>
 
         {/* Desktop Navigation */}
@@ -61,7 +63,7 @@ const Navigation = () => {
           ))}
           <Link to="/get-started">
             <Button className="waffle-button">
-              Get Started
+              Get Started 🧇
             </Button>
           </Link>
         </nav>
@@ -93,7 +95,7 @@ const Navigation = () => {
             ))}
             <Link to="/get-started" onClick={() => setMenuOpen(false)}>
               <Button className="waffle-button w-full mt-2">
-                Get Started
+                Get Started 🧇
               </Button>
             </Link>
           </div>
@@ -132,7 +134,7 @@ const MobileLink = ({
     onClick={onClick}
     className="py-2 px-4 text-left text-lg font-medium text-waffle-800 hover:bg-waffle-50 rounded-lg transition-colors block"
   >
-    {children}
+    {children} 🧇
   </Link>
 );
 
