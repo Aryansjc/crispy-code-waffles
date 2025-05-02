@@ -1,4 +1,3 @@
-
 // Global state
 const state = {
   currentPage: 'home',
