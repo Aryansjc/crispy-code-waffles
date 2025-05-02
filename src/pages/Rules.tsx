@@ -1,23 +1,23 @@
 
 import React, { useEffect } from 'react';
 import Navigation from '@/components/Navigation';
-import HeroSection from '@/components/HeroSection';
 import Footer from '@/components/Footer';
+import RulesSection from '@/components/RulesSection';
 
-const Index = () => {
+const Rules = () => {
   // Scroll to top on page load
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
+  
   return (
     <div className="min-h-screen bg-white">
       {/* Navigation */}
       <Navigation />
       
       {/* Main content */}
-      <main>
-        <HeroSection />
+      <main className="pt-20">
+        <RulesSection />
       </main>
       
       {/* Footer */}
@@ -26,4 +26,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default Rules;

@@ -75,14 +75,6 @@ const HeroSection: React.FC = () => {
             Learn More
           </Button>
         </div>
-        
-        {/* Event date */}
-        <div className={cn(
-          "mt-12 p-4 bg-white/50 backdrop-blur-sm rounded-xl border border-waffle-200 opacity-0",
-          loaded && "opacity-100 transition-all duration-700 delay-900"
-        )}>
-          <p className="text-syrup-600 font-medium">Event starts on May 15, 2025</p>
-        </div>
       </div>
       
       {/* Scroll indicator */}

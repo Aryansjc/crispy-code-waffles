@@ -5,6 +5,11 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
+import Gallery from "./pages/Gallery";
+import Requirements from "./pages/Requirements";
+import Rules from "./pages/Rules";
+import Prizes from "./pages/Prizes";
+import GetStarted from "./pages/GetStarted";
 import NotFound from "./pages/NotFound";
 import WaffleBackground from "./components/WaffleBackground";
 
@@ -26,6 +31,11 @@ const App = () => (
         
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/requirements" element={<Requirements />} />
+          <Route path="/rules" element={<Rules />} />
+          <Route path="/prizes" element={<Prizes />} />
+          <Route path="/get-started" element={<GetStarted />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
