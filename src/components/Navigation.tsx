@@ -59,13 +59,11 @@ const Navigation = () => {
           {navItems.map((item, index) => (
             <LinkItem key={index} to={item.path}>{item.name}</LinkItem>
           ))}
-          <Button 
-            as={Link}
-            to="/get-started"
-            className="waffle-button"
-          >
-            Get Started
-          </Button>
+          <Link to="/get-started">
+            <Button className="waffle-button">
+              Get Started
+            </Button>
+          </Link>
         </nav>
 
         {/* Mobile Menu Button */}
@@ -93,14 +91,11 @@ const Navigation = () => {
                 {item.name}
               </MobileLink>
             ))}
-            <Button 
-              as={Link}
-              to="/get-started"
-              className="waffle-button w-full mt-2"
-              onClick={() => setMenuOpen(false)}
-            >
-              Get Started
-            </Button>
+            <Link to="/get-started" onClick={() => setMenuOpen(false)}>
+              <Button className="waffle-button w-full mt-2">
+                Get Started
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
